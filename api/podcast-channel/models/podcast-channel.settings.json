@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "PodcastChannel",
+  "info": {
+    "name": "PodcastChannel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contect_maker_id": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "cover_pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "podcast_eposides": {
+      "collection": "podcast-eposide",
+      "via": "podcast_channel"
+    }
+  }
+}

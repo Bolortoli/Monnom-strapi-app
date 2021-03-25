@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/podcast-episodes",
+      "handler": "podcast-eposide.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-episodes/count",
+      "handler": "podcast-eposide.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-episodes/:id",
+      "handler": "podcast-eposide.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/podcast-episodes",
+      "handler": "podcast-eposide.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/podcast-eposides/:id",
+      "handler": "podcast-eposide.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/podcast-eposides/:id",
+      "handler": "podcast-eposide.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

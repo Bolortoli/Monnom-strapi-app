@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "PodcastEpisode",
+  "info": {
+    "name": "podcastEpisode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "podcast_channel": {
+      "via": "podcast_eposides",
+      "model": "podcast-channel"
+    },
+    "episode_number": {
+      "default": 0,
+      "type": "integer"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "audio_file_path": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "view_count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
