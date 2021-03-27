@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "roleIdentifier",
+  "info": {
+    "name": "roleIdentifier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "role_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "role_number": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/role-identifiers",
+      "handler": "role-identifier.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/role-identifiers/count",
+      "handler": "role-identifier.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/role-identifiers/:id",
+      "handler": "role-identifier.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/role-identifiers",
+      "handler": "role-identifier.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/role-identifiers/:id",
+      "handler": "role-identifier.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/role-identifiers/:id",
+      "handler": "role-identifier.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

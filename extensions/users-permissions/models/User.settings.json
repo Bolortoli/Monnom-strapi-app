@@ -84,6 +84,9 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "role_identifier": {
+      "model": "role-identifier"
     }
   }
 }
