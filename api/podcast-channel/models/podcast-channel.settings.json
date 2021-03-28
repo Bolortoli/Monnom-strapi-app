@@ -30,6 +30,10 @@
     "podcast_eposides": {
       "collection": "podcast-eposide",
       "via": "podcast_channel"
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }
