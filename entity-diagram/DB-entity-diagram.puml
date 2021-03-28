@@ -1,0 +1,193 @@
+@startuml
+
+object employee {
+    id
+    fullname
+    username
+    password
+    email
+    phone
+    gender
+    address
+    ' admin, manager, deliveryman
+    role
+}
+
+object customer {
+    id 
+    name 
+    username
+    password
+    email
+    phone
+    birthday
+    gender
+}
+
+object contentMaker {
+    id
+    name
+    username
+    password
+    ' podcast maker, booker registerer, fm admin
+    role
+    email
+    phone
+    birthday
+    gender
+    ' user_description
+    ' profile_pic
+}
+
+object confirmationCode {
+    id
+    customerID
+    confirm_code
+    created_date
+}
+
+object customerPaidEBooks { 
+    id 
+    ' customerID
+    bookID
+    paymentID
+    
+}
+
+object customerPaidBook {
+    id
+    ' customerID
+    bookID
+    paymentID
+}
+
+object customerPaidMP3Books {
+    id
+    ' customerID
+    bookID
+    paymentID
+}
+
+object booksCategory {
+    id
+    name
+    created_date
+}
+
+object book {
+    id
+    name
+    registered_content_makerID
+    registered_date
+    authorID
+    categoryID
+    picture_path
+    description
+    read_count
+    has_sale
+    quantity
+    has_audio
+    audio_price
+    has_pdf
+    pdf_price
+    pdf_file_path
+}
+
+object bookAuthor {
+    id
+    registered_content_makerID
+    name
+    description
+    profile_pic
+    created_date
+}
+
+object bookAudio {
+    id
+    chapter_name
+    bookID
+    mp3_file_path
+    listen_count
+    uploaded_date
+}
+
+object podcastChannel {
+    id
+    contentMakerID
+    cover_pic
+    description
+    created_date
+}
+
+object podcastEpisode {
+    id
+    episode_number
+    podcastChannelID
+    name
+    description
+    audio_file_path
+    view_count
+}
+
+
+object fm {
+    id
+    name
+    owner : contentMakerID
+    description
+    picture
+}
+
+object fmPlaylistStack {
+    id
+    fmChannelID
+    mp3_file_path
+    stack_number
+}
+
+object payment {
+    id
+    customerID
+    created_date
+    payment_data
+    payment_amount
+    order_date
+    is_approved
+    ' for pdf, mp3 or physical
+    payment_type    
+    order_destination
+}
+
+object deliveryRegistration {
+    id
+    customerPaidPhysicalBookID
+    delivery_manID : employeeID
+    delivery_state
+}
+
+
+
+contentMaker --> book
+contentMaker --> podcastChannel
+contentMaker --> fm
+fm --> fmPlaylistStack
+podcastChannel --> podcastEpisode
+customer --> confirmationCode : for signup
+booksCategory --> book
+bookAuthor --> book
+contentMaker --> bookAuthor
+book --> bookAudio
+customer --> payment
+' customer --> payment
+payment  --> customerPaidEBooks 
+payment  --> customerPaidMP3Books 
+payment  --> customerPaidBook 
+book --> customerPaidBook
+book --> customerPaidEBooks
+book --> customerPaidMP3Books
+employee --> deliveryRegistration
+customerPaidBook --> deliveryRegistration 
+
+
+
+@enduml
