@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "BookAudio",
+  "info": {
+    "name": "BookAudio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "book": {
+      "model": "book"
+    },
+    "chapter_name": {
+      "type": "string",
+      "required": true
+    },
+    "mp3_file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "listen_count": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

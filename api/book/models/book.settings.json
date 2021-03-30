@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Book",
+  "info": {
+    "name": "Book",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "read_count": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    },
+    "has_sale": {
+      "type": "boolean",
+      "default": false
+    },
+    "sale_quantity": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    },
+    "has_audio": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "audio_price": {
+      "type": "integer",
+      "default": 0,
+      "required": false
+    },
+    "has_pdf": {
+      "type": "boolean",
+      "default": false,
+      "private": false,
+      "required": false
+    },
+    "pdf_price": {
+      "type": "integer",
+      "required": false,
+      "default": 0
+    },
+    "pdf_book_path": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "book_author": {
+      "model": "book-author"
+    },
+    "book_category": {
+      "model": "book-category"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
