@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/token-checker",
+      "handler": "token-checker.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/token-checker",
+      "handler": "token-checker.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/token-checker",
+      "handler": "token-checker.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "BookComment",
+  "info": {
+    "name": "BookComment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "type": "text",
+      "required": true
+    },
+    "user_id": {
+      "type": "integer",
+      "required": true
+    },
+    "book": {
+      "via": "book_comments",
+      "model": "book"
+    }
+  }
+}

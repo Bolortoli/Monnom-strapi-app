@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "name": "Payment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "payment_data": {
+      "type": "text",
+      "required": true
+    },
+    "payment_amount": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    },
+    "is_approved": {
+      "type": "boolean",
+      "default": false
+    },
+    "payment_type": {
+      "type": "string"
+    }
+  }
+}

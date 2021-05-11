@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "BookAudio",
   "info": {
-    "name": "BookAudio"
+    "name": "BookAudio",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "book": {
@@ -27,6 +28,10 @@
       "required": false
     },
     "listen_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "number": {
       "type": "integer",
       "default": 0
     }

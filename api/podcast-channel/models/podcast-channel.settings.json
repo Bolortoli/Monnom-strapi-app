@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "content_maker_id": {
@@ -27,13 +27,17 @@
     "description": {
       "type": "richtext"
     },
-    "podcast_eposides": {
-      "collection": "podcast-eposide",
-      "via": "podcast_channel"
-    },
     "name": {
       "type": "string",
       "required": true
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "podcast_episodes": {
+      "via": "podcast_channel",
+      "collection": "podcast-episode"
     }
   }
 }

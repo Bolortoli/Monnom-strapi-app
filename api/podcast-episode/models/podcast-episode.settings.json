@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_episodes",
+  "info": {
+    "name": "PodcastEpisode"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "podcast_channel": {
+      "model": "podcast-channel",
+      "via": "podcast_episodes"
+    },
+    "episode_number": {
+      "type": "integer",
+      "default": 0
+    },
+    "audio_file_path": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "view_count": {
+      "type": "integer",
+      "default": 0
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "episode_name": {
+      "type": "string"
+    },
+    "episode_description": {
+      "type": "string"
+    },
+    "podcast_episode_comments": {
+      "via": "podcast_episode",
+      "collection": "podcast-episode-comment"
+    }
+  }
+}

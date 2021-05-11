@@ -8,16 +8,12 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
+      "required": false
     },
     "read_count": {
       "type": "integer",
@@ -38,21 +34,11 @@
       "default": false,
       "required": false
     },
-    "audio_price": {
-      "type": "integer",
-      "default": 0,
-      "required": false
-    },
     "has_pdf": {
       "type": "boolean",
       "default": false,
       "private": false,
       "required": false
-    },
-    "pdf_price": {
-      "type": "integer",
-      "required": false,
-      "default": 0
     },
     "pdf_book_path": {
       "model": "file",
@@ -63,11 +49,8 @@
       "plugin": "upload",
       "required": false
     },
-    "book_author": {
-      "model": "book-author"
-    },
-    "book_category": {
-      "model": "book-category"
+    "book_categories": {
+      "collection": "book-category"
     },
     "users_permissions_user": {
       "plugin": "users-permissions",
@@ -81,6 +64,43 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "book_comments": {
+      "collection": "book-comment",
+      "via": "book"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "youtube_intro": {
+      "type": "string"
+    },
+    "picture_comment": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "introduction": {
+      "type": "text"
+    },
+    "book_authors": {
+      "collection": "book-author"
+    },
+    "test": {
+      "model": "test"
+    },
+    "online_book_price": {
+      "type": "integer",
+      "required": false
+    },
+    "book_price": {
+      "type": "integer",
+      "required": false
     }
   }
 }

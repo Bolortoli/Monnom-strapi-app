@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "delivery_registrations",
+  "info": {
+    "name": "DeliveryRegistration",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "is_delivered": {
+      "type": "boolean",
+      "default": false
+    },
+    "customer_paid_book": {
+      "model": "customer-paid-book"
+    },
+    "customer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "employee": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "order_destination": {
+      "type": "string"
+    }
+  }
+}

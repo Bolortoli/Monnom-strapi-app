@@ -46,9 +46,9 @@ object confirmationCode {
     created_date
 }
 
-object customerPaidEBooks { 
+object customerPaidOnlineBooks { 
     id 
-    ' customerID
+    customerID
     bookID
     paymentID
     
@@ -56,14 +56,7 @@ object customerPaidEBooks {
 
 object customerPaidBook {
     id
-    ' customerID
-    bookID
-    paymentID
-}
-
-object customerPaidMP3Books {
-    id
-    ' customerID
+    customerID
     bookID
     paymentID
 }
@@ -87,9 +80,9 @@ object book {
     has_sale
     quantity
     has_audio
-    audio_price
     has_pdf
-    pdf_price
+    online_book_price
+    book_price
     pdf_file_path
 }
 
@@ -155,14 +148,15 @@ object payment {
     is_approved
     ' for pdf, mp3 or physical
     payment_type    
-    order_destination
 }
 
 object deliveryRegistration {
     id
     customerPaidPhysicalBookID
     delivery_manID : employeeID
-    delivery_state
+    is_delivered
+    customerID
+    order_destination
 }
 
 
@@ -178,15 +172,15 @@ bookAuthor --> book
 contentMaker --> bookAuthor
 book --> bookAudio
 customer --> payment
-' customer --> payment
-payment  --> customerPaidEBooks 
-payment  --> customerPaidMP3Books 
-payment  --> customerPaidBook 
+customerPaidOnlineBooks --> payment 
+customerPaidBook --> payment 
 book --> customerPaidBook
-book --> customerPaidEBooks
-book --> customerPaidMP3Books
+book --> customerPaidOnlineBooks
+customer --> customerPaidBook
+customer --> customerPaidOnlineBooks
 employee --> deliveryRegistration
 customerPaidBook --> deliveryRegistration 
+customer --> deliveryRegistration 
 
 
 

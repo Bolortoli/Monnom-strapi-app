@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/confirmation-codes",
+      "handler": "confirmation-code.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/confirmation-codes/count",
+      "handler": "confirmation-code.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/confirmation-codes/:id",
+      "handler": "confirmation-code.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/confirmation-codes",
+      "handler": "confirmation-code.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/confirmation-codes/:id",
+      "handler": "confirmation-code.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/confirmation-codes/:id",
+      "handler": "confirmation-code.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

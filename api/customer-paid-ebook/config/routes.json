@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-paid-ebooks",
+      "handler": "customer-paid-ebook.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-ebooks/count",
+      "handler": "customer-paid-ebook.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-ebooks/:id",
+      "handler": "customer-paid-ebook.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customer-paid-ebooks",
+      "handler": "customer-paid-ebook.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-paid-ebooks/:id",
+      "handler": "customer-paid-ebook.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-paid-ebooks/:id",
+      "handler": "customer-paid-ebook.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

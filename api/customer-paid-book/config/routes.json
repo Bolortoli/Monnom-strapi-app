@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-paid-books",
+      "handler": "customer-paid-book.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-books/count",
+      "handler": "customer-paid-book.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-books/:id",
+      "handler": "customer-paid-book.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customer-paid-books",
+      "handler": "customer-paid-book.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-paid-books/:id",
+      "handler": "customer-paid-book.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-paid-books/:id",
+      "handler": "customer-paid-book.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

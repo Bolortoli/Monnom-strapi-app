@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "confirmation_codes",
+  "info": {
+    "name": "confirmationCode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "confirm_code": {
+      "type": "string"
+    }
+  }
+}

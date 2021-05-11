@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "BookAuthor",
+  "collectionName": "book_authors",
   "info": {
     "name": "BookAuthor",
     "description": ""
@@ -8,29 +8,12 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "name": {
+    "author_name": {
       "type": "string",
       "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
-    "profile_pic": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "registered_employee": {
-      "plugin": "users-permissions",
-      "model": "user"
     }
   }
 }

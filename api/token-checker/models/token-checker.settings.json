@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "token_checkers",
+  "info": {
+    "name": "TokenChecker"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "check": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

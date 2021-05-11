@@ -18,10 +18,10 @@
       "required": true
     },
     "email": {
-      "type": "email",
+      "type": "string",
       "minLength": 6,
       "configurable": false,
-      "required": true
+      "required": false
     },
     "provider": {
       "type": "string",
@@ -85,8 +85,9 @@
       "plugin": "upload",
       "required": true
     },
-    "role_identifier": {
-      "model": "role-identifier"
+    "e_mail": {
+      "type": "string",
+      "required": true
     }
   }
 }
