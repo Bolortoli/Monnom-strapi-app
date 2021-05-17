@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "radio_channel_audios",
+  "info": {
+    "name": "RadioChannelAudio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "audio_name": {
+      "type": "string"
+    },
+    "audio": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "stack_number": {
+      "type": "integer",
+      "default": 0
+    },
+    "radio_channel": {
+      "via": "radio_channel_audios",
+      "model": "radio-channel"
+    },
+    "audio_duration": {
+      "type": "string"
+    }
+  }
+}

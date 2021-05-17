@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_saved_podcasts",
+  "info": {
+    "name": "UserSavedPodcast",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "podcast_channel": {
+      "model": "podcast-channel"
+    }
+  }
+}

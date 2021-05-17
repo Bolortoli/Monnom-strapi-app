@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/special-book",
+      "handler": "special-book.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/special-book",
+      "handler": "special-book.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/special-book",
+      "handler": "special-book.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

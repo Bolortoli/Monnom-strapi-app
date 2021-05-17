@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "radio_channel_s",
+  "info": {
+    "name": "RadioChannel ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "radio_channel_audios": {
+      "collection": "radio-channel-audio",
+      "via": "radio_channel"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

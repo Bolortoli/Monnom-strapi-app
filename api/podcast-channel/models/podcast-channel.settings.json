@@ -11,10 +11,6 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "content_maker_id": {
-      "plugin": "admin",
-      "model": "user"
-    },
     "cover_pic": {
       "model": "file",
       "via": "related",
@@ -36,8 +32,20 @@
       "default": false
     },
     "podcast_episodes": {
-      "via": "podcast_channel",
-      "collection": "podcast-episode"
+      "collection": "podcast-episode",
+      "via": "podcast_channel"
+    },
+    "podcast_categories": {
+      "collection": "podcast-category"
+    },
+    "podcast_channel_comments": {
+      "collection": "podcast-channel-comment",
+      "via": "podcast_channel"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "podcast_channel"
     }
   }
 }

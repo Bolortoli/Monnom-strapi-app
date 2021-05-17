@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_channel_comments",
+  "info": {
+    "name": "PodcastChannelComment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "user_name": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "podcast_channel": {
+      "via": "podcast_channel_comments",
+      "model": "podcast-channel"
+    }
+  }
+}

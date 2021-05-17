@@ -66,8 +66,8 @@
       "required": true
     },
     "book_comments": {
-      "collection": "book-comment",
-      "via": "book"
+      "via": "book",
+      "collection": "book-comment"
     },
     "is_featured": {
       "type": "boolean",
@@ -101,6 +101,10 @@
     "book_price": {
       "type": "integer",
       "required": false
+    },
+    "book_audios": {
+      "via": "book",
+      "collection": "book-audio"
     }
   }
 }

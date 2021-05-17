@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-saved-books",
+      "handler": "user-saved-books.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-saved-books/count",
+      "handler": "user-saved-books.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-saved-books/:id",
+      "handler": "user-saved-books.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-saved-books",
+      "handler": "user-saved-books.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-saved-books/:id",
+      "handler": "user-saved-books.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-saved-books/:id",
+      "handler": "user-saved-books.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

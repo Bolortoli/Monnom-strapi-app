@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/user-saved-podcasts",
+      "handler": "user-saved-podcast.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-saved-podcasts/count",
+      "handler": "user-saved-podcast.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/user-saved-podcasts/:id",
+      "handler": "user-saved-podcast.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/user-saved-podcasts",
+      "handler": "user-saved-podcast.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/user-saved-podcasts/:id",
+      "handler": "user-saved-podcast.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/user-saved-podcasts/:id",
+      "handler": "user-saved-podcast.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

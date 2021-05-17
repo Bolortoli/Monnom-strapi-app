@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/podcast-channel-comments",
+      "handler": "podcast-channel-comment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-channel-comments/count",
+      "handler": "podcast-channel-comment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/podcast-channel-comments/:id",
+      "handler": "podcast-channel-comment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/podcast-channel-comments",
+      "handler": "podcast-channel-comment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/podcast-channel-comments/:id",
+      "handler": "podcast-channel-comment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/podcast-channel-comments/:id",
+      "handler": "podcast-channel-comment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

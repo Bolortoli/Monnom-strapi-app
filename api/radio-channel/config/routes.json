@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/radio-channels",
+      "handler": "radio-channel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/radio-channels/count",
+      "handler": "radio-channel.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/radio-channels/:id",
+      "handler": "radio-channel.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/radio-channels",
+      "handler": "radio-channel.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/radio-channels/:id",
+      "handler": "radio-channel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/radio-channels/:id",
+      "handler": "radio-channel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

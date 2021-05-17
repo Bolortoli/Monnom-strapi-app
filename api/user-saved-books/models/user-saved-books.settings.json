@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_saved_books",
+  "info": {
+    "name": "UserSavedBooks"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "book": {
+      "model": "book"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

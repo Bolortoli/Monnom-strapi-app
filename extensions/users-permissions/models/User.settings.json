@@ -61,20 +61,20 @@
     },
     "fullname": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "phone": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "gender": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "user_role": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "profile_picture": {
       "model": "file",
@@ -83,11 +83,18 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "e_mail": {
       "type": "string",
-      "required": true
+      "required": false
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "podcast_channel": {
+      "via": "users_permissions_user",
+      "model": "podcast-channel"
     }
   }
 }

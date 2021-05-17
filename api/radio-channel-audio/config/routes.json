@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/radio-channel-audios",
+      "handler": "radio-channel-audio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/radio-channel-audios/count",
+      "handler": "radio-channel-audio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/radio-channel-audios/:id",
+      "handler": "radio-channel-audio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/radio-channel-audios",
+      "handler": "radio-channel-audio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/radio-channel-audios/:id",
+      "handler": "radio-channel-audio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/radio-channel-audios/:id",
+      "handler": "radio-channel-audio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

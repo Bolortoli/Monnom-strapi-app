@@ -20,8 +20,8 @@
       "type": "integer"
     },
     "podcast_episode": {
-      "model": "podcast-episode",
-      "via": "podcast_episode_comments"
+      "via": "podcast_episode_comments",
+      "model": "podcast-episode"
     }
   }
 }

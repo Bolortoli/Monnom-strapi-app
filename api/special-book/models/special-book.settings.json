@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "special_books",
+  "info": {
+    "name": "SpecialBook"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "book": {
+      "model": "book"
+    }
+  }
+}

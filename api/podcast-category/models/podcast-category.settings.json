@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcast_categories",
+  "info": {
+    "name": "PodcastCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

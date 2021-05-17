@@ -2,17 +2,18 @@
   "kind": "collectionType",
   "collectionName": "podcast_episodes",
   "info": {
-    "name": "PodcastEpisode"
+    "name": "PodcastEpisode",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "podcast_channel": {
-      "model": "podcast-channel",
-      "via": "podcast_episodes"
+      "via": "podcast_episodes",
+      "model": "podcast-channel"
     },
     "episode_number": {
       "type": "integer",
@@ -47,8 +48,11 @@
       "type": "string"
     },
     "podcast_episode_comments": {
-      "via": "podcast_episode",
-      "collection": "podcast-episode-comment"
+      "collection": "podcast-episode-comment",
+      "via": "podcast_episode"
+    },
+    "mp3_duration": {
+      "type": "string"
     }
   }
 }

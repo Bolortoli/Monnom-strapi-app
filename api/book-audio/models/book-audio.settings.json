@@ -12,7 +12,8 @@
   },
   "attributes": {
     "book": {
-      "model": "book"
+      "model": "book",
+      "via": "book_audios"
     },
     "chapter_name": {
       "type": "string",
@@ -34,6 +35,9 @@
     "number": {
       "type": "integer",
       "default": 0
+    },
+    "audio_duration": {
+      "type": "string"
     }
   }
 }
