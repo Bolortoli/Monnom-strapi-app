@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "customer_paid_ebooks",
   "info": {
-    "name": "customerPaidOnlineBook",
+    "name": "customerPaidEBook",
     "description": ""
   },
   "options": {

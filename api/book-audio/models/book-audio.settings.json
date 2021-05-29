@@ -12,8 +12,8 @@
   },
   "attributes": {
     "book": {
-      "model": "book",
-      "via": "book_audios"
+      "via": "book_audios",
+      "model": "book"
     },
     "chapter_name": {
       "type": "string",

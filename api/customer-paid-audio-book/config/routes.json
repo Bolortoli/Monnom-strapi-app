@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-paid-audio-books",
+      "handler": "customer-paid-audio-book.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-audio-books/count",
+      "handler": "customer-paid-audio-book.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-paid-audio-books/:id",
+      "handler": "customer-paid-audio-book.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customer-paid-audio-books",
+      "handler": "customer-paid-audio-book.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-paid-audio-books/:id",
+      "handler": "customer-paid-audio-book.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-paid-audio-books/:id",
+      "handler": "customer-paid-audio-book.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

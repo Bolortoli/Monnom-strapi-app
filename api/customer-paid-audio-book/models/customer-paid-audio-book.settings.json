@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_paid_audio_books",
+  "info": {
+    "name": "CustomerPaidAudioBook"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "book": {
+      "model": "book"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "payment": {
+      "model": "payment"
+    }
+  }
+}
