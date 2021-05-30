@@ -1,0 +1,1 @@
+sequel -C sqlite:///Users/battulga/workspace/web/monnom/Monnom-strapi-app/.tmp/data.sqlite3 postgresql://monnom:admin@localhost/monnom

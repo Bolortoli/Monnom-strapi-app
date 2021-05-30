@@ -12,8 +12,8 @@
   },
   "attributes": {
     "podcast_channel": {
-      "via": "podcast_episodes",
-      "model": "podcast-channel"
+      "model": "podcast-channel",
+      "via": "podcast_episodes"
     },
     "episode_number": {
       "type": "integer",
@@ -45,7 +45,7 @@
       "type": "string"
     },
     "episode_description": {
-      "type": "string"
+      "type": "text"
     },
     "podcast_episode_comments": {
       "collection": "podcast-episode-comment",

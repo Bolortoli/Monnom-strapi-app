@@ -1,0 +1,1 @@
+pgloader ./data.db postgresql://monnom:admin@localhost/monnom
