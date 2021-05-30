@@ -19,19 +19,19 @@ module.exports = ({ env }) => ({
 });
 
 // sqlite fallback
-module.exports = ({ env }) => ({
-  defaultConnection: 'default',
-  connections: {
-    default: {
-      connector: 'bookshelf',
-      settings: {
-        client: 'sqlite',
-        filename: env('DATABASE_FILENAME', '.tmp/data.sqlite3'),
-      },
-      options: {
-        useNullAsDefault: true,
-      },
-    },
-  },
-});
+// module.exports = ({ env }) => ({
+//   defaultConnection: 'default',
+//   connections: {
+//     default: {
+//       connector: 'bookshelf',
+//       settings: {
+//         client: 'sqlite',
+//         filename: env('DATABASE_FILENAME', '.tmp/data.sqlite3'),
+//       },
+//       options: {
+//         useNullAsDefault: true,
+//       },
+//     },
+//   },
+// });
 
