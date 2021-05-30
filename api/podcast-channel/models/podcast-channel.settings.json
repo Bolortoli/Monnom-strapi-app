@@ -32,8 +32,8 @@
       "default": false
     },
     "podcast_episodes": {
-      "collection": "podcast-episode",
-      "via": "podcast_channel"
+      "via": "podcast_channel",
+      "collection": "podcast-episode"
     },
     "podcast_categories": {
       "collection": "podcast-category"
