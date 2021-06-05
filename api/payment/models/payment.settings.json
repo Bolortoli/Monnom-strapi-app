@@ -17,7 +17,7 @@
     },
     "payment_data": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "payment_amount": {
       "type": "integer",
@@ -28,7 +28,14 @@
       "type": "boolean",
       "default": false
     },
-    "payment_type": {
+    "book_payment_type": {
+      "type": "string",
+      "required": false
+    },
+    "book": {
+      "model": "book"
+    },
+    "invoice_id": {
       "type": "string"
     }
   }

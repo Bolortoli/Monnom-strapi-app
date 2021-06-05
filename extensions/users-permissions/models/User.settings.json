@@ -93,8 +93,11 @@
       "type": "string"
     },
     "podcast_channel": {
-      "via": "users_permissions_user",
-      "model": "podcast-channel"
+      "model": "podcast-channel",
+      "via": "users_permissions_user"
+    },
+    "fcm_token": {
+      "type": "text"
     }
   }
 }
