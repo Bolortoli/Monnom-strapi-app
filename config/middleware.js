@@ -8,5 +8,12 @@ module.exports = {
 			enabled: true,
 			origin: ["*"],
 		},
+		parser: {
+			enabled: true,
+      multipart: true,
+      formidable: {
+        maxFileSize: 2048 * 1024 * 1024 // Defaults to 200mb
+	}
+		}
 	},
 };
