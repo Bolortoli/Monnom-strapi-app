@@ -43,9 +43,9 @@
       "via": "podcast_channel"
     },
     "users_permissions_user": {
+      "via": "podcast_channel",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "podcast_channel"
+      "model": "user"
     }
   }
 }

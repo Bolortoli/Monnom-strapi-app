@@ -15,19 +15,18 @@
       "type": "boolean",
       "default": false
     },
-    "customer_paid_book": {
-      "model": "customer-paid-book"
-    },
     "customer": {
-      "plugin": "users-permissions",
-      "model": "user"
-    },
-    "employee": {
       "plugin": "users-permissions",
       "model": "user"
     },
     "order_destination": {
       "type": "string"
+    },
+    "customer_paid_book": {
+      "model": "customer-paid-book"
+    },
+    "is_paid": {
+      "type": "boolean"
     }
   }
 }

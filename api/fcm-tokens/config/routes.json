@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fcm-tokens",
+      "handler": "fcm-tokens.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fcm-tokens/count",
+      "handler": "fcm-tokens.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fcm-tokens/:id",
+      "handler": "fcm-tokens.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fcm-tokens",
+      "handler": "fcm-tokens.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fcm-tokens/:id",
+      "handler": "fcm-tokens.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fcm-tokens/:id",
+      "handler": "fcm-tokens.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

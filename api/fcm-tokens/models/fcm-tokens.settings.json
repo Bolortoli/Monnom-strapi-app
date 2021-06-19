@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fcm_tokens",
+  "info": {
+    "name": "FcmTokens"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "fcm_tokens"
+    }
+  }
+}
