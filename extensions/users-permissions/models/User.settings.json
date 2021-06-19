@@ -98,6 +98,10 @@
     },
     "fcm_token": {
       "type": "text"
+    },
+    "fcm_tokens": {
+      "via": "user",
+      "collection": "fcm-tokens"
     }
   }
 }
