@@ -10,10 +10,10 @@ module.exports = {
 		},
 		parser: {
 			enabled: true,
-      multipart: true,
-      formidable: {
-        maxFileSize: 2048 * 1024 * 1024 // Defaults to 200mb
-	}
+			multipart: true,
+			formidable: {
+				maxFileSize: 4096 * 1024 * 1024 // 2GB
+			}
 		}
 	},
 };
