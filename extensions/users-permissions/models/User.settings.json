@@ -100,8 +100,15 @@
       "type": "text"
     },
     "fcm_tokens": {
-      "via": "user",
-      "collection": "fcm-tokens"
+      "collection": "fcm-tokens",
+      "via": "user"
+    },
+    "resetPasswordTokenIssuedAt": {
+      "type": "datetime"
+    },
+    "resetPasswordCode": {
+      "type": "string",
+      "private": true
     }
   }
 }

@@ -11,9 +11,9 @@
   },
   "attributes": {
     "user": {
+      "via": "fcm_tokens",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "fcm_tokens"
+      "model": "user"
     }
   }
 }

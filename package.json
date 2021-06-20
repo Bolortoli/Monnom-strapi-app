@@ -18,6 +18,8 @@
     "strapi": "3.5.3",
     "strapi-admin": "3.5.3",
     "strapi-connector-bookshelf": "3.5.3",
+    "strapi-generate-controller": "^3.6.3",
+    "strapi-generate-plugin": "^3.6.3",
     "strapi-plugin-content-manager": "3.5.3",
     "strapi-plugin-content-type-builder": "3.5.3",
     "strapi-plugin-email": "3.5.3",
