@@ -100,8 +100,19 @@
       "type": "text"
     },
     "fcm_tokens": {
-      "via": "user",
-      "collection": "fcm-tokens"
+      "collection": "fcm-tokens",
+      "via": "user"
+    },
+    "resetPasswordCode": {
+      "type": "string",
+      "private": true
+    },
+    "resetPasswordTokenIssuedAt": {
+      "type": "datetime"
+    },
+    "is_guest": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
