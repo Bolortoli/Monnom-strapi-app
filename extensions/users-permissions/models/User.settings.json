@@ -103,7 +103,6 @@
       "collection": "fcm-tokens",
       "via": "user"
     },
-<<<<<<< HEAD
     "resetPasswordCode": {
       "type": "string",
       "private": true
@@ -114,14 +113,6 @@
     "is_guest": {
       "type": "boolean",
       "default": false
-=======
-    "resetPasswordTokenIssuedAt": {
-      "type": "datetime"
-    },
-    "resetPasswordCode": {
-      "type": "string",
-      "private": true
->>>>>>> fd65e1f23671e124ad2facec5682f8ba3a91c872
     }
   }
 }
