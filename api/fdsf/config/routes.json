@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fdsfs",
+      "handler": "fdsf.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fdsfs/count",
+      "handler": "fdsf.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fdsfs/:id",
+      "handler": "fdsf.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fdsfs",
+      "handler": "fdsf.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fdsfs/:id",
+      "handler": "fdsf.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fdsfs/:id",
+      "handler": "fdsf.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -96,7 +96,8 @@
     },
     "online_book_price": {
       "type": "integer",
-      "required": false
+      "required": false,
+      "default": 0
     },
     "book_price": {
       "type": "integer",
@@ -109,6 +110,36 @@
     "audio_book_price": {
       "type": "integer",
       "default": 0
+    },
+    "epub_book_path": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "is_ebook_pdf": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "is_ebook_epub": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "featured_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

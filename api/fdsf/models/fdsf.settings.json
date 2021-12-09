@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fdsfs",
+  "info": {
+    "name": "fdsf"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "number": {
+      "type": "integer"
+    }
+  }
+}

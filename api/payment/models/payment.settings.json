@@ -40,6 +40,16 @@
     },
     "callback_url": {
       "type": "string"
+    },
+    "qpay_invoice_id": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "paid_amount": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
